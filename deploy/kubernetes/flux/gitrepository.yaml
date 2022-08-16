@@ -1,0 +1,12 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: GitRepository
+metadata:
+  name: sock-shop
+  namespace: kommander-flux
+spec:
+  interval: 60s
+  ref:
+    branch: master
+  secretRef:
+    name: alex-flux-auth
+  url: https://github.com/alexchrisramos/microservices-demo-sock-shop
