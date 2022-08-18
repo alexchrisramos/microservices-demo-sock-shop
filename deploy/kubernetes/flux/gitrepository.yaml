@@ -8,5 +8,5 @@ spec:
   ref:
     branch: master
   secretRef:
-    name: alex-flux-auth
+    name: private-repo-credentials
   url: https://github.com/alexchrisramos/microservices-demo-sock-shop
